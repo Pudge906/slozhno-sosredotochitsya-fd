@@ -2,4 +2,240 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  position: relative;
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  display: grid;
+  align-content: space-evenly;
+}
+
+.corners {
+  position: relative;
+}
+
+.corners::before {
+  content: '';
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--corners-color);
+  border-inline-end: 1px solid var(--corners-color);
+}
+
+.corners::after {
+  content: '';
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--corners-color);
+  border-block-end: 1px solid var(--corners-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: flex-start;
+  padding-inline-end: 10px;
+  color: var(--main_title-color);
+}
+
+.header__theme-menu-list {
+  padding-block-start: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  min-inline-size: 70px;
+  display: grid;
+  block-size: 26px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--item_hover-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--button_active-color);
+  outline: none;
+}
+
+.header__theme-menu-button {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button_active-color);
+  pointer-events: none;
+}
+
+.rec {
+  position: absolute;
+  inset-inline-end: 19px;
+  inset-block-start: 10px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  opacity: 0;
+  color: rgba(255, 0, 112, 1);
+}
+
+.rec::after {
+  content: '';
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-inline-start: 10px;
+  box-shadow: 0 0 4px 2px rgba(255, 0, 112, 1);
+}
+
+.title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: bold;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
+}
+
+.header_title {
+  justify-self: left;
+  align-self: center;
+  line-height: 83%;
+  padding: 20px 10px 5px 10px;
+}
+
+.content {
+  justify-self: right;
+  align-self: center;
+  margin: 0px 10px 0px 10px;
+  color: var(--subtitle-color);
+  margin-block-end: 19px;
+  font-family: inherit;
+}
+
+.main {
+  margin-block-start: 40px;
+  min-block-size: min-content;
+}
+
+.main_title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--main_title-color);
+}
+
+.card_title {
+  background-color: var(--accent-color);
+  color: var(--subtitle-color);
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.advice .card_title {
+  font-weight: normal;
+}
+
+.advice .subtitle {
+  font-weight: bold;
+}
+
+.card {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--p-color);
+}
+
+.section {
+  gap: 20px;
+  padding: 0px 10px;
+  margin-block-start: 49px;
+}
+
+.focus {
+  display: grid;
+  margin-block-start: 0px;
+  flex-direction: none;
+}
+
+.card_content {
+  display: grid;
+  gap: 20px;
+}
+
+.content_text {
+  padding-block-start: 10px;
+}
+
+.focus_link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--shadow_link-color);
+}
+
+.focus_link:hover {
+  border-block-end: 1px solid var(--p-color);
+}
+
+.focus_link:focus {
+  outline: none;
+}
+
+.focus_link:focus-visible {
+  outline: 1px solid var(--p-color);
+}
+
+.concentration {
+  display: grid;
+  justify-content: center;
+}
+
+.advice {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.footer {
+  block-size: 100vh;
+  min-block-size: 668px;
+  margin-block-start: 40px;
+  display: grid;
+}
+
+.footer_title {
+  justify-self: center;
+  align-self: center;
 }

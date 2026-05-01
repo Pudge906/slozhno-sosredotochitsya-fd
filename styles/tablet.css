@@ -1,0 +1,123 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    align-content: space-evenly;
+  }
+
+  .corners::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .corners::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
+  .rec {
+    inset-inline-end: 29px;
+    inset-block-start: 20px;
+  }
+
+  .header__theme-menu {
+    padding: 35px 20px 0px 0px;
+  }
+
+  .header__theme-menu-list {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header_title {
+    padding: 15px 0px 5px 0px;
+  }
+
+  .content {
+    margin: 0px 20px 25px 10px;
+    max-inline-size: 364px;
+  }
+
+  .main {
+    margin-block-start: 60px;
+  }
+
+  .section {
+    padding: 0px 20px;
+    margin-block-start: 80px;
+  }
+
+  .focus {
+    margin-block-start: 0px;
+    grid-template-columns: 236px 1fr;
+    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .main_title_concentration {
+    max-inline-size: 236px;
+  }
+
+  .advice {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 236px 1fr;
+  }
+
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: flex-start;
+    gap: 20px;
+    max-inline-size: 768px;
+  }
+
+  .pictures_block {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 230px);
+    padding-top: 0px;
+    justify-content: center;
+  }
+
+  .sunset {
+    inline-size: 479px;
+    block-size: 192px;
+    grid-column: 1/3;
+  }
+
+  .ice-cream {
+    inline-size: 229px;
+    block-size: 442px;
+    object-fit: cover;
+    grid-column: 3;
+    grid-row: 1/3;
+  }
+
+  .tape {
+    inline-size: 229px;
+    block-size: 568px;
+    object-fit: cover;
+    grid-row: 2/4;
+  }
+
+  .books {
+    inline-size: 230px;
+    block-size: 230px;
+  }
+
+  .street {
+    inline-size: 479px;
+    block-size: 318px;
+    grid-row: 3;
+    grid-column: 2/3;
+  }
+
+  .footer {
+    margin-block-start: 60px;
+  }
+}
