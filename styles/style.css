@@ -75,7 +75,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: normal;
   font-size: 18px;
   line-height: 18px;
@@ -182,7 +182,7 @@
 .focus {
   display: grid;
   margin-block-start: 0px;
-  flex-direction: none;
+  gap: 20px;
 }
 
 .card_content {

@@ -41,7 +41,8 @@
 
   .content {
     margin: 0px 20px 75px 20px;
-    inline-size: 491px;
+    width: 100%;
+    max-width: 491px;
   }
 
   .main {
@@ -103,13 +104,11 @@
   .pictures_block {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 315px);
     justify-content: center;
     padding-top: 0px;
   }
 
   .sunset {
-    inline-size: 649.4px;
     block-size: 260px;
     grid-column: 1/3;
 }
