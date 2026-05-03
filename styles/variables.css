@@ -4,15 +4,14 @@
 */
 
 :root {
-  --bg-image: url(../images/cover-image-light.png);
-  --bg-color: rgba(255, 241, 247, 1);
-  --title-color: rgba(255, 194, 230, 1);
-  --accent-color: rgba(255, 141, 203, 1);
-  --corners-color: rgba(53, 52, 48, 1);
-  --p-color: rgba(53, 52, 48, 1);
-  --subtitle-color: rgba(53, 52, 48, 1);
-  --main_title-color: rgba(53, 52, 48, 1);
-  --shadow_link-color: rgba(255, 141, 203, 1);
-  --button_active-color: rgba(53, 52, 48, 1);
-  --item_hover-color: rgba(50, 49, 45, 0.4);
+  --background-color: #000028;
+  --background-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --accent-color-transparent: rgba(255, 0, 112, 0.4);
+  --decor-color: #ff0070;
+  --primary-font-size: 18px;
+  --title-decor-text-color: #000028;
+  --header-color: #db00ff;
+  --card-font-color: #f1b2ce;
+  --section-title-color: #ff0070;
 }
